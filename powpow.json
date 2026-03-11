@@ -1,10 +1,12 @@
 {
   "version": 2,
   "enabled": true,
-  "confirm_count": 15,
+  "confirm_count": 60,
   "min_voltage_rise": 50,
+  "startup_warmup_seconds": 120,
   "disabled_devices": ["ROAR-ON-PAUL"]
 }
+
 
 
 
