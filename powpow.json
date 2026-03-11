@@ -2,9 +2,10 @@
   "version": 2,
   "enabled": true,
   "confirm_count": 15,
-  "min_voltage_rise": 45,
+  "min_voltage_rise": 50,
   "disabled_devices": ["ROAR-ON-PAUL"]
 }
+
 
 
 
