@@ -1,9 +1,9 @@
  {
   "version": 4,
   "enabled": true,
-  "confirm_count": 3,
+  "confirm_count": 10,
   "min_voltage_rise": 50,
-  "min_delta_spike": 0,
+  "min_delta_spike": 8,
   "startup_warmup_seconds": 180,
   "boot_high_confirm_count": 3,
   "boot_shutdown_delay_seconds": 10,
@@ -17,6 +17,7 @@
   },
   "disabled_devices": ["ROAR-ON-PAUL"]
 }
+
 
 
 
