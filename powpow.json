@@ -12,11 +12,12 @@
       "boot_high_voltage_threshold": 4510
     },
     "rk3568_r": {
-      "boot_high_voltage_threshold": 4645
+      "boot_high_voltage_threshold": 4600
     }
   },
   "disabled_devices": ["ROAR-ON-PAUL"]
 }
+
 
 
 
