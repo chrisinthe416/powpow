@@ -1,12 +1,24 @@
-{
-  "version": 3,
-   "enabled": true,
+
+  {
+  "version": 4,
+  "enabled": true,
   "confirm_count": 3,
   "min_voltage_rise": 50,
   "min_delta_spike": 0,
   "startup_warmup_seconds": 180,
+  "boot_high_confirm_count": 3,
+  "boot_shutdown_delay_seconds": 10,
+  "device_profiles": {
+    "rk3288": {
+      "boot_high_voltage_threshold": 4510
+    },
+    "rk3568_r": {
+      "boot_high_voltage_threshold": 4645
+    }
+  },
   "disabled_devices": ["ROAR-ON-PAUL"]
 }
+
 
 
 
