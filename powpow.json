@@ -1,9 +1,10 @@
- {
-  "version": 4,
+{
+  "version": 5,
   "enabled": true,
-  "confirm_count": 3,
+  "confirm_count": 5,
   "min_voltage_rise": 50,
-  "min_delta_spike": 0,
+  "min_delta_spike": 8,
+  "min_slope": 7,
   "startup_warmup_seconds": 180,
   "boot_high_confirm_count": 3,
   "boot_shutdown_delay_seconds": 10,
