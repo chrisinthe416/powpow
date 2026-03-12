@@ -3,10 +3,11 @@
    "enabled": true,
   "confirm_count": 3,
   "min_voltage_rise": 50,
-  "min_delta_spike": 20,
+  "min_delta_spike": 0,
   "startup_warmup_seconds": 180,
   "disabled_devices": ["ROAR-ON-PAUL"]
 }
+
 
 
 
