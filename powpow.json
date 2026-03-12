@@ -1,24 +1,33 @@
 {
-  "version": 6,
+  "version": 7,
   "enabled": true,
+
   "confirm_count": 5,
-  "min_voltage_rise": 50,
-  "min_delta_spike": 8,
-  "min_slope": 7,
-  "plug_confirm_count": 3,
-  "unplug_confirm_count": 6,
-  "min_voltage_rise_from_recent_min": 55,
-  "min_avg_positive_slope": 8,
-  "min_avg_negative_slope": -6,
-  "min_drop_from_peak": 45,
+
+  "min_voltage_rise": 20,
+  "min_delta_spike": 5,
+  "min_slope": 1,
+
+  "plug_confirm_count": 5,
+  "unplug_confirm_count": 8,
+
+  "min_voltage_rise_from_recent_min": 10,
+  "min_avg_positive_slope": 0.5,
+  "min_avg_negative_slope": -1.5,
+  "min_drop_from_peak": 20,
+
   "max_single_sample_jitter_to_ignore": 4,
+
   "startup_warmup_seconds": 180,
   "plug_cooldown_seconds": 30,
   "min_seconds_between_shutdowns": 120,
+
   "history_size": 8,
   "recent_min_window_size": 20,
+
   "boot_high_confirm_count": 3,
   "boot_shutdown_delay_seconds": 10,
+
   "device_profiles": {
     "rk3288": {
       "boot_high_voltage_threshold": 4510
@@ -27,8 +36,10 @@
       "boot_high_voltage_threshold": 4600
     }
   },
+
   "disabled_devices": ["ROAR-ON-PAUL"]
 }
+
 
 
 
