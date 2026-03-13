@@ -4,5 +4,5 @@
   "apk_url": "https://raw.githubusercontent.com/chrisinthe416/powpow/refs/heads/main/powpow-latest.apk",
   "force_update": false,
   "min_required_version_code": 10,
-  "release_notes": "Remote config + display-off suppression + updater"
+  "release_notes": "Remote config + updater"
 }
