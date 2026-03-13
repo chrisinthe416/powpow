@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "enabled": true,
 
   "confirm_count": 7,
@@ -43,8 +43,11 @@
     }
   },
 
-  "disabled_devices": ["ROAR-ON-PAUL"]
+  "disabled_devices": [
+    "ROAR-ON-PAUL"
+  ]
 }
+
 
 
 
