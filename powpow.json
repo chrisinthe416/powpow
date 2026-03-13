@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "enabled": true,
 
   "confirm_count": 7,
@@ -32,6 +32,7 @@
   "major_load_drop_from_recent_max": 25,
   "major_load_drop_negative_slope": -1.5,
   "ignore_plug_detection_after_load_drop_seconds": 45,
+  "ignore_plug_detection_after_display_off_seconds": 60,
 
   "device_profiles": {
     "rk3288": {
@@ -44,6 +45,7 @@
 
   "disabled_devices": ["ROAR-ON-PAUL"]
 }
+
 
 
 
