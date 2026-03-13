@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "enabled": true,
 
   "confirm_count": 7,
@@ -24,9 +24,14 @@
 
   "history_size": 8,
   "recent_min_window_size": 20,
+  "recent_max_window_size": 20,
 
   "boot_high_confirm_count": 8,
   "boot_shutdown_delay_seconds": 10,
+
+  "major_load_drop_from_recent_max": 25,
+  "major_load_drop_negative_slope": -1.5,
+  "ignore_plug_detection_after_load_drop_seconds": 45,
 
   "device_profiles": {
     "rk3288": {
