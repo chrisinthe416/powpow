@@ -1,18 +1,18 @@
 {
-  "version": 7,
+  "version": 8,
   "enabled": true,
 
-  "confirm_count": 5,
+  "confirm_count": 7,
 
   "min_voltage_rise": 20,
   "min_delta_spike": 5,
-  "min_slope": 1,
+  "min_slope": 1.5,
 
-  "plug_confirm_count": 5,
+  "plug_confirm_count": 7,
   "unplug_confirm_count": 8,
 
-  "min_voltage_rise_from_recent_min": 10,
-  "min_avg_positive_slope": 0.5,
+  "min_voltage_rise_from_recent_min": 18,
+  "min_avg_positive_slope": 1.5,
   "min_avg_negative_slope": -1.5,
   "min_drop_from_peak": 20,
 
@@ -25,12 +25,12 @@
   "history_size": 8,
   "recent_min_window_size": 20,
 
-  "boot_high_confirm_count": 3,
+  "boot_high_confirm_count": 8,
   "boot_shutdown_delay_seconds": 10,
 
   "device_profiles": {
     "rk3288": {
-      "boot_high_voltage_threshold": 4510
+      "boot_high_voltage_threshold": 4385
     },
     "rk3568_r": {
       "boot_high_voltage_threshold": 4600
