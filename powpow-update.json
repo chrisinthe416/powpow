@@ -1,8 +1,8 @@
 {
-  "latest_version_code": 12,
-  "latest_version_name": "1.2.0",
+  "latest_version_code": 13,
+  "latest_version_name": "2.0.0",
   "apk_url": "https://raw.githubusercontent.com/chrisinthe416/powpow/main/powpow.apk",
   "force_update": false,
-  "min_required_version_code": 10,
+  "min_required_version_code": 13,
   "release_notes": "Remote config + updater"
 }
