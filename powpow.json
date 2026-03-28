@@ -1,45 +1,52 @@
 {
-  "version": 13,
+  "version": 14,
   "enabled": true,
 
-  "confirm_count": 7,
+  "global": {
+    "poll_interval_ms": 1000,
+    "required_stable_polls": 7,
+    "boot_grace_ms": 90000,
+    "min_action_gap_ms": 60000,
 
-  "min_voltage_rise": 20,
-  "min_delta_spike": 5,
-  "min_slope": 1.5,
+    "plugged_adc_threshold": 1000,
+    "unplugged_adc_threshold": 990,
+    "plugged_voltage_threshold": 5260,
+    "unplugged_voltage_threshold": 5225,
 
-  "plug_confirm_count": 7,
-  "unplug_confirm_count": 8,
+    "min_adc_rise_from_baseline": 6,
+    "min_voltage_rise_from_baseline": 20,
 
-  "min_voltage_rise_from_recent_min": 18,
-  "min_avg_positive_slope": 1.5,
-  "min_avg_negative_slope": -1.5,
-  "min_drop_from_peak": 20,
+    "max_adc_drop_during_confirm": 3,
+    "max_voltage_drop_during_confirm": 10,
 
-  "max_single_sample_jitter_to_ignore": 4,
+    "baseline_window_size": 20,
 
-  "startup_warmup_seconds": 180,
-  "plug_cooldown_seconds": 30,
-  "min_seconds_between_shutdowns": 120,
+    "action_mode": "shell_power"
+  },
 
-  "history_size": 8,
-  "recent_min_window_size": 20,
-  "recent_max_window_size": 20,
+  "rollout": {
+    "mode": "all",
+    "percentage": 100,
+    "include_devices": [],
+    "exclude_devices": []
+  },
 
-  "boot_high_confirm_count": 8,
-  "boot_shutdown_delay_seconds": 10,
-
-  "major_load_drop_from_recent_max": 25,
-  "major_load_drop_negative_slope": -1.5,
-  "ignore_plug_detection_after_load_drop_seconds": 45,
-  "ignore_plug_detection_after_display_off_seconds": 60,
-
-  "device_profiles": {
-    "rk3288": {
-      "boot_high_voltage_threshold": 4385
+  "groups": {
+    "ontario": {
+      "plugged_voltage_threshold": 5265
     },
-    "rk3568_r": {
-      "boot_high_voltage_threshold": 4600
+    "alberta": {
+      "plugged_voltage_threshold": 5270
+    },
+    "test_devices": {
+      "required_stable_polls": 5
+    }
+  },
+
+  "devices": {
+    "ROAR-ON-TIMOTHYS": {
+      "plugged_voltage_threshold": 5258,
+      "min_voltage_rise_from_baseline": 18
     }
   },
 
