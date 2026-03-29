@@ -1,45 +1,39 @@
 {
-  "version": 16,
+  "version": 17,
   "enabled": true,
   "global": {
     "enabled": true,
     "poll_interval_ms": 1000,
-    "required_stable_polls": 10,
+    "required_stable_polls": 8,
     "boot_grace_ms": 90000,
     "min_action_gap_ms": 60000,
 
-    "plugged_adc_threshold": 1000,
-    "unplugged_adc_threshold": 990,
-    "plugged_voltage_threshold": 5260,
-    "unplugged_voltage_threshold": 5225,
+    "plugged_adc_threshold": 905,
+    "unplugged_adc_threshold": 895,
+    "plugged_voltage_threshold": 4790,
+    "unplugged_voltage_threshold": 4760,
 
-    "min_adc_rise_from_baseline": 6,
-    "min_voltage_rise_from_baseline": 20,
+    "min_adc_rise_from_baseline": 3,
+    "min_voltage_rise_from_baseline": 15,
 
-    "min_step_adc": 4,
-    "min_step_voltage": 8,
-
-    "max_adc_drop_during_confirm": 3,
-    "max_voltage_drop_during_confirm": 10,
+    "max_adc_drop_during_confirm": 4,
+    "max_voltage_drop_during_confirm": 12,
 
     "baseline_window_size": 20,
 
     "signature_plateau_window_size": 6,
-    "signature_max_adc_variance": 3,
-    "signature_max_voltage_variance": 12,
+    "signature_max_adc_variance": 6,
+    "signature_max_voltage_variance": 18,
 
     "adaptive_enabled": true,
-    "adaptive_adc_margin": 8,
-    "adaptive_voltage_margin": 35,
-    "adaptive_min_plugged_adc_threshold": 1000,
-    "adaptive_max_plugged_adc_threshold": 1018,
-    "adaptive_min_plugged_voltage_threshold": 5260,
-    "adaptive_max_plugged_voltage_threshold": 5300,
-    "adaptive_max_samples": 120,
+    "adaptive_adc_margin": 12,
+    "adaptive_voltage_margin": 70,
+    "adaptive_min_plugged_adc_threshold": 900,
+    "adaptive_max_plugged_adc_threshold": 930,
+    "adaptive_min_plugged_voltage_threshold": 4780,
+    "adaptive_max_plugged_voltage_threshold": 4850,
 
+    "adaptive_max_samples": 120,
     "action_mode": "shell_power"
-  },
-  "disabled_devices": [
-    "ROAR-ON-PAUL"
-  ]
+  }
 }
