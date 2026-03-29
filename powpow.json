@@ -1,44 +1,44 @@
 {
-  "version": 18,
+  "version": 19,
   "enabled": true,
   "global": {
     "enabled": true,
     "poll_interval_ms": 1000,
-    "required_stable_polls": 6,
+    "required_stable_polls": 8,
     "boot_grace_ms": 90000,
     "min_action_gap_ms": 120000,
 
-    "plugged_adc_threshold": 905,
-    "unplugged_adc_threshold": 895,
-    "plugged_voltage_threshold": 4790,
-    "unplugged_voltage_threshold": 4760,
+    "plugged_adc_threshold": 930,
+    "unplugged_adc_threshold": 900,
+    "plugged_voltage_threshold": 4940,
+    "unplugged_voltage_threshold": 4925,
 
-    "min_adc_rise_from_baseline": 2,
-    "min_voltage_rise_from_baseline": 10,
+    "min_adc_rise_from_baseline": 1,
+    "min_voltage_rise_from_baseline": 1,
 
-    "min_adc_rise_from_recent_min": 5,
-    "min_voltage_rise_from_recent_min": 35,
+    "min_avg_positive_adc_slope": 0.25,
+    "min_avg_positive_voltage_slope": 0.20,
 
     "max_adc_drop_during_confirm": 5,
-    "max_voltage_drop_during_confirm": 15,
+    "max_voltage_drop_during_confirm": 10,
 
     "baseline_window_size": 20,
-    "recent_min_window_size": 20,
+    "slope_window_size": 5,
 
     "signature_plateau_window_size": 5,
     "signature_max_adc_variance": 10,
-    "signature_max_voltage_variance": 25,
+    "signature_max_voltage_variance": 10,
 
-    "adaptive_enabled": true,
-    "adaptive_adc_margin": 12,
-    "adaptive_voltage_margin": 70,
-    "adaptive_min_plugged_adc_threshold": 900,
-    "adaptive_max_plugged_adc_threshold": 930,
-    "adaptive_min_plugged_voltage_threshold": 4780,
-    "adaptive_max_plugged_voltage_threshold": 4850,
+    "adaptive_enabled": false,
+    "adaptive_adc_margin": 8,
+    "adaptive_voltage_margin": 8,
+    "adaptive_min_plugged_adc_threshold": 920,
+    "adaptive_max_plugged_adc_threshold": 950,
+    "adaptive_min_plugged_voltage_threshold": 4935,
+    "adaptive_max_plugged_voltage_threshold": 4950,
     "adaptive_max_samples": 120,
 
-    "use_delta_detection": true,
+    "use_slope_detection": true,
     "disable_absolute_thresholds": true,
 
     "action_mode": "shell_power"
