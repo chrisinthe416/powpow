@@ -1,29 +1,33 @@
 {
-  "version": 17,
+  "version": 18,
   "enabled": true,
   "global": {
     "enabled": true,
     "poll_interval_ms": 1000,
-    "required_stable_polls": 8,
+    "required_stable_polls": 6,
     "boot_grace_ms": 90000,
-    "min_action_gap_ms": 60000,
+    "min_action_gap_ms": 120000,
 
     "plugged_adc_threshold": 905,
     "unplugged_adc_threshold": 895,
     "plugged_voltage_threshold": 4790,
     "unplugged_voltage_threshold": 4760,
 
-    "min_adc_rise_from_baseline": 3,
-    "min_voltage_rise_from_baseline": 15,
+    "min_adc_rise_from_baseline": 2,
+    "min_voltage_rise_from_baseline": 10,
 
-    "max_adc_drop_during_confirm": 4,
-    "max_voltage_drop_during_confirm": 12,
+    "min_adc_rise_from_recent_min": 5,
+    "min_voltage_rise_from_recent_min": 35,
+
+    "max_adc_drop_during_confirm": 5,
+    "max_voltage_drop_during_confirm": 15,
 
     "baseline_window_size": 20,
+    "recent_min_window_size": 20,
 
-    "signature_plateau_window_size": 6,
-    "signature_max_adc_variance": 6,
-    "signature_max_voltage_variance": 18,
+    "signature_plateau_window_size": 5,
+    "signature_max_adc_variance": 10,
+    "signature_max_voltage_variance": 25,
 
     "adaptive_enabled": true,
     "adaptive_adc_margin": 12,
@@ -32,8 +36,11 @@
     "adaptive_max_plugged_adc_threshold": 930,
     "adaptive_min_plugged_voltage_threshold": 4780,
     "adaptive_max_plugged_voltage_threshold": 4850,
-
     "adaptive_max_samples": 120,
+
+    "use_delta_detection": true,
+    "disable_absolute_thresholds": true,
+
     "action_mode": "shell_power"
   }
 }
