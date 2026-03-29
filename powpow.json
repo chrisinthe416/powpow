@@ -1,8 +1,9 @@
 {
-  "version": 14,
+  "version": 15,
   "enabled": true,
 
   "global": {
+    "enabled": true,
     "poll_interval_ms": 1000,
     "required_stable_polls": 7,
     "boot_grace_ms": 90000,
@@ -16,60 +17,27 @@
     "min_adc_rise_from_baseline": 6,
     "min_voltage_rise_from_baseline": 20,
 
+    "min_step_adc": 4,
+    "min_step_voltage": 8,
+
     "max_adc_drop_during_confirm": 3,
     "max_voltage_drop_during_confirm": 10,
 
     "baseline_window_size": 20,
 
+    "adaptive_enabled": true,
+    "adaptive_adc_margin": 8,
+    "adaptive_voltage_margin": 35,
+    "adaptive_min_plugged_adc_threshold": 1000,
+    "adaptive_max_plugged_adc_threshold": 1018,
+    "adaptive_min_plugged_voltage_threshold": 5260,
+    "adaptive_max_plugged_voltage_threshold": 5300,
+    "adaptive_max_samples": 120,
+
     "action_mode": "shell_power"
-  },
-
-  "rollout": {
-    "mode": "all",
-    "percentage": 100,
-    "include_devices": [],
-    "exclude_devices": []
-  },
-
-  "groups": {
-    "ontario": {
-      "plugged_voltage_threshold": 5265
-    },
-    "alberta": {
-      "plugged_voltage_threshold": 5270
-    },
-    "test_devices": {
-      "required_stable_polls": 5
-    }
-  },
-
-  "devices": {
-    "ROAR-ON-TIMOTHYS": {
-      "plugged_voltage_threshold": 5258,
-      "min_voltage_rise_from_baseline": 18
-    }
   },
 
   "disabled_devices": [
     "ROAR-ON-PAUL"
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
