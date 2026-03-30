@@ -1,5 +1,5 @@
 {
-  "version": 26,
+  "version": 27,
   "enabled": true,
   "global": {
     "enabled": true,
@@ -19,5 +19,13 @@
     "spike_mode_enabled": true,
     "action_mode": "shell_power"
   },
-  "disabled_devices": []
+  "disabled_devices": [],
+  "update": {
+    "latest_version_code": 26,
+    "latest_version_name": "1.0.0",
+    "apk_url": "",
+    "force_update": false,
+    "min_required_version_code": 1,
+    "release_notes": ""
+  }
 }
