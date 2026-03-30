@@ -19,7 +19,5 @@
     "spike_mode_enabled": true,
     "action_mode": "shell_power"
   },
-  "disabled_devices": [
-    "ROAR-ON-JIMMY"
-  ]
+  "disabled_devices": []
 }
