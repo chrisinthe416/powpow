@@ -1,5 +1,5 @@
 {
-  "version": 24,
+  "version": 25,
   "enabled": true,
   "global": {
     "enabled": true,
@@ -7,22 +7,18 @@
     "required_stable_polls": 7,
     "boot_grace_ms": 90000,
     "min_action_gap_ms": 120000,
-
     "plugged_adc_floor": 940,
     "unplugged_adc_threshold": 900,
-    "min_adc_rise_from_baseline": 6,
-    "min_fast_adc_step": 3,
+    "min_adc_rise_from_baseline": 10,
+    "min_fast_adc_step": 6,
     "min_hold_adc_rise": 4,
     "max_adc_drop_during_confirm": 3,
     "baseline_window_size": 20,
-
-    "ignore_plug_detection_after_display_off_ms": 10000,
-
+    "ignore_plug_detection_after_display_off_ms": 20000,
+    "rearm_adc_threshold": 938,
     "spike_mode_enabled": true,
-
     "action_mode": "shell_power"
   },
-
   "disabled_devices": [
     "ROAR-ON-PAUL"
   ]
