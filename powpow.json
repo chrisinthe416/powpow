@@ -4,15 +4,15 @@
   "global": {
     "enabled": true,
     "poll_interval_ms": 1000,
-    "boot_grace_ms": 10000,
+    "boot_grace_ms": 30000,
     "min_action_gap_ms": 120000,
     "baseline_window_size": 20,
 
-    "min_adc_rise_over_baseline": 8,
+    "min_adc_rise_over_baseline": 7,
     "hold_duration_ms": 10000,
 
     "ignore_plug_detection_after_display_off_ms": 0,
-    "ignore_after_screen_on_ms": 3000,
+    "ignore_after_screen_on_ms": 10000,
     "require_screen_on_for_detection": false,
     "ignore_while_screen_off": false,
     "cancel_candidate_on_screen_off": true,
