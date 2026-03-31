@@ -4,7 +4,7 @@
   "global": {
     "enabled": true,
     "poll_interval_ms": 1000,
-    "required_stable_polls": 5,
+    "required_stable_polls": 4,
     "boot_grace_ms": 10000,
     "min_action_gap_ms": 120000,
     "plugged_adc_floor": 885,
