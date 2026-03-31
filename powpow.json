@@ -1,5 +1,5 @@
 {
-  "version": 30,
+  "version": 31,
   "enabled": true,
   "global": {
     "enabled": true,
@@ -8,7 +8,7 @@
     "boot_grace_ms": 10000,
     "min_action_gap_ms": 120000,
     "plugged_adc_floor": 885,
-    "unplugged_adc_threshold": 900,
+    "unplugged_adc_threshold": 860,
     "min_adc_rise_from_baseline": 4,
     "min_fast_adc_step": 3,
     "min_hold_adc_rise": 3,
