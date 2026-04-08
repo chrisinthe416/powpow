@@ -1,6 +1,6 @@
 {
   "version": 32,
-  "enabled": true,
+  "enabled": false,
   "global": {
     "enabled": false,
     "poll_interval_ms": 1000,
