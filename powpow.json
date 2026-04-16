@@ -1,5 +1,5 @@
 {
-  "version": 34,
+  "version": 35,
   "enabled": true,
   "global": {
     "enabled": true,
@@ -28,10 +28,12 @@
       "action_mode": "shell_power"
     },
     "ANDROID_7_1_2_DEFAULT": {
-      "min_adc_rise_over_baseline": 4,
-      "hold_duration_ms": 3000,
+      "min_adc_rise_over_baseline": 8,
+      "hold_duration_ms": 4000,
       "required_stable_polls": 4,
       "max_adc_spread_for_stable": 8,
+      "ignore_after_screen_on_ms": 10000,
+      "cancel_candidate_on_screen_off": true,
       "action_mode": "shell_power"
     }
   },
