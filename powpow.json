@@ -37,13 +37,13 @@
       "action_mode": "shell_power"
     },
 
-    "ANDROID_7_1_2_DEFAULT": {
-      "min_adc_rise_over_baseline": 5,
-      "hold_duration_ms": 4000,
-      "required_stable_polls": 10,
-      "max_adc_spread_for_stable": 3,
-      "action_mode": "shell_power"
-    }
+ "ANDROID_7_1_2_DEFAULT": {
+  "min_adc_rise_over_baseline": 4,
+  "hold_duration_ms": 3000,
+  "required_stable_polls": 4,
+  "max_adc_spread_for_stable": 8,
+  "action_mode": "shell_power"
+}
 
   },
 
