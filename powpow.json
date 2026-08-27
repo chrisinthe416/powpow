@@ -1,8 +1,8 @@
 {
-  "version": 35,
-  "enabled": true,
+  "version": 36,
+  "enabled": false,
   "global": {
-    "enabled": true,
+    "enabled": false,
     "poll_interval_ms": 1000,
     "boot_grace_ms": 90000,
     "min_action_gap_ms": 120000,
@@ -14,20 +14,22 @@
     "require_screen_on_for_detection": false,
     "ignore_while_screen_off": false,
     "cancel_candidate_on_screen_off": true,
-    "spike_mode_enabled": true,
+    "spike_mode_enabled": false,
     "action_mode": "log_only",
     "required_stable_polls": 3,
     "max_adc_spread_for_stable": 10
   },
   "device_overrides": {
     "ANDROID_11_DEFAULT": {
+      "enabled": false,
       "min_adc_rise_over_baseline": 7,
       "hold_duration_ms": 5000,
       "required_stable_polls": 8,
       "max_adc_spread_for_stable": 2,
-      "action_mode": "shell_power"
+      "action_mode": "log_only"
     },
     "ANDROID_7_1_2_DEFAULT": {
+      "enabled": false,
       "baseline_window_size": 10,
       "min_adc_rise_over_baseline": 6,
       "hold_duration_ms": 4000,
@@ -35,7 +37,7 @@
       "max_adc_spread_for_stable": 10,
       "ignore_after_screen_on_ms": 10000,
       "cancel_candidate_on_screen_off": true,
-      "action_mode": "shell_power"
+      "action_mode": "log_only"
     }
   },
   "disabled_devices": []
