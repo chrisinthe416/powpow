@@ -1,8 +1,8 @@
 {
-  "latest_version_code": 16,
+  "latest_version_code": 40,
   "latest_version_name": "2.1.0",
   "apk_url": "https://raw.githubusercontent.com/chrisinthe416/powpow/main/powpow.apk",
   "force_update": false,
-  "min_required_version_code": 16,
+  "min_required_version_code": 40,
   "release_notes": "ADC+voltage baseline rise and decay rejection"
 }
