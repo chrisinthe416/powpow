@@ -29,7 +29,7 @@
       "action_mode": "log_only"
     },
     "ANDROID_7_1_2_DEFAULT": {
-      "enabled": false,
+      "enabled": true,
       "baseline_window_size": 10,
       "min_adc_rise_over_baseline": 6,
       "hold_duration_ms": 4000,
