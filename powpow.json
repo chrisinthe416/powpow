@@ -1,5 +1,5 @@
 {
-  "version": 39,
+  "version": 40,
   "enabled": true,
   "global": {
     "enabled": true,
@@ -33,9 +33,9 @@
     "ANDROID_7_1_2_DEFAULT": {
       "enabled": true,
       "baseline_window_size": 10,
-      "min_adc_rise_over_baseline": 6,
-      "hold_duration_ms": 4000,
-      "required_stable_polls": 3,
+      "min_adc_rise_over_baseline": 3,
+      "hold_duration_ms": 3000,
+      "required_stable_polls": 2,
       "max_adc_spread_for_stable": 10,
       "ignore_after_screen_on_ms": 10000,
       "cancel_candidate_on_screen_off": true,
