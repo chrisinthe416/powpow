@@ -1,8 +1,8 @@
 {
   "version": 36,
-  "enabled": false,
+  "enabled": true,
   "global": {
-    "enabled": false,
+    "enabled": true,
     "poll_interval_ms": 1000,
     "boot_grace_ms": 90000,
     "min_action_gap_ms": 120000,
