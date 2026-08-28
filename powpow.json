@@ -1,5 +1,5 @@
 {
-  "version": 40,
+  "version": 41,
   "enabled": true,
   "global": {
     "enabled": true,
@@ -43,5 +43,15 @@
       "action_mode": "shell_power"
     }
   },
-  "disabled_devices": []
+  "disabled_devices": [],
+  "update": {
+    "enabled": false,
+    "latest_version_code": 41,
+    "latest_version_name": "2.2.0",
+    "apk_url": "https://raw.githubusercontent.com/chrisinthe416/powpow/main/powpow.apk?v=41",
+    "sha256": "",
+    "force_update": false,
+    "min_required_version_code": 41,
+    "release_notes": "Base44 telemetry, unattended updates and Android 7.1.2 detection correction"
+  }
 }
