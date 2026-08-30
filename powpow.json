@@ -1,5 +1,5 @@
 {
-  "version": 42,
+  "version": 43,
   "enabled": true,
   "global": {
     "enabled": true,
@@ -22,7 +22,7 @@
   },
   "device_overrides": {
     "ANDROID_11_DEFAULT": {
-      "enabled": false,
+      "enabled": true,
       "min_adc_rise_over_baseline": 7,
       "hold_duration_ms": 5000,
       "required_stable_polls": 8,
