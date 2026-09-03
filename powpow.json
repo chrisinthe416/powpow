@@ -1,8 +1,8 @@
 {
-  "version": 43,
-  "enabled": true,
+  "version": 44,
+  "enabled": false,
   "global": {
-    "enabled": true,
+    "enabled": false,
     "poll_interval_ms": 1000,
     "remote_config_refresh_ms": 60000,
     "boot_grace_ms": 90000,
@@ -13,34 +13,23 @@
     "ignore_plug_detection_after_display_off_ms": 0,
     "ignore_after_screen_on_ms": 10000,
     "require_screen_on_for_detection": false,
-    "ignore_while_screen_off": false,
+    "ignore_while_screen_off": true,
     "cancel_candidate_on_screen_off": true,
-    "spike_mode_enabled": true,
+    "spike_mode_enabled": false,
     "action_mode": "log_only",
     "required_stable_polls": 3,
     "max_adc_spread_for_stable": 10
   },
   "device_overrides": {
     "ANDROID_11_DEFAULT": {
-      "enabled": true,
-      "min_adc_rise_over_baseline": 7,
-      "hold_duration_ms": 5000,
-      "required_stable_polls": 8,
-      "max_adc_spread_for_stable": 2,
-      "spike_mode_enabled": true,
+      "enabled": false,
+      "spike_mode_enabled": false,
       "action_mode": "log_only"
     },
     "ANDROID_7_1_2_DEFAULT": {
-      "enabled": true,
-      "baseline_window_size": 10,
-      "min_adc_rise_over_baseline": 3,
-      "hold_duration_ms": 3000,
-      "required_stable_polls": 2,
-      "max_adc_spread_for_stable": 10,
-      "ignore_after_screen_on_ms": 10000,
-      "cancel_candidate_on_screen_off": true,
-      "spike_mode_enabled": true,
-      "action_mode": "shell_power"
+      "enabled": false,
+      "spike_mode_enabled": false,
+      "action_mode": "log_only"
     }
   },
   "disabled_devices": [],
@@ -52,6 +41,6 @@
     "sha256": "c58fcdd63d2311f2c518570fe3653a11271fd359d6082f6419995704e4ab9c15",
     "force_update": false,
     "min_required_version_code": 41,
-    "release_notes": "Base44 telemetry, unattended updates and Android 7.1.2 detection correction"
+    "release_notes": "PowPow power detection and shutdown actions globally disabled for fleet deployment."
   }
 }
