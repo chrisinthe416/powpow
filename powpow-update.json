@@ -1,9 +1,9 @@
 {
-  "latest_version_code": 44,
+  "latest_version_code": 42,
   "latest_version_name": "2.2.1",
   "apk_url": "https://raw.githubusercontent.com/chrisinthe416/powpow/main/powpow.apk?v=42",
   "sha256": "c58fcdd63d2311f2c518570fe3653a11271fd359d6082f6419995704e4ab9c15",
   "force_update": false,
-  "min_required_version_code": 44,
+  "min_required_version_code": 41,
   "release_notes": "PowPow power detection and shutdown actions globally disabled for fleet deployment."
 }
